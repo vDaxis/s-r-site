@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свиные рыльца тип</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background-color: #fff0f2;
+            margin: 0;
+            padding: 20px; 
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            gap: 40px;
+            width: 100%;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .logo-wrapper {
+            width: 100%;
+            transition: transform 0.2s ease;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .logo-wrapper:hover {
+            transform: scale(1.03);
+        }
+
+        .logo-wrapper:active {
+            transform: scale(0.97);
+        }
+
+        .logo-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .hint-text {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 40px;
+            color: #ff8a9e;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-support {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background-color: #ffffff;
+            color: #ff8a9e;
+            border: 4px solid #ff8a9e;
+            padding: 14px 20px;
+            font-size: 26px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+            max-width: 340px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+            margin-top: auto;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-support:hover {
+            background-color: #ff8a9e;
+            color: #fff;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 4px solid #ffb7c5;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 8px 24px rgba(255, 138, 158, 0.08);
+        }
+
+        .card h2 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            margin: 0;
+            font-size: 52px;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 4px dashed #ffb7c5;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.35;
+            color: #222;
+            margin: 0 0 10px 0;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .logo-img, .btn-support {
+                max-width: 260px;
+            }
+            .card h2 {
+                font-size: 38px;
+            }
+            .hint-text {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-column">
+            <a href="https://discord.gg/SUazbvZk5c" target="_blank" class="logo-wrapper">
+                <img src="logo.png" alt="Логотип Свинка" class="logo-img">
+            </a>
+            
+            <div class="hint-text">НАЖМИ ↑</div>
+            
+            <a href="support.html" class="btn-support">
+                ПОДДЕРЖАТЬ
+            </a>
+        </div>
+
+        <div class="right-column">
+            <div class="card">
+                <h2>ИНФО</h2>
+                <p>Свиные рыльца - дружественный дискорд сервер, где вы всегда можете найти новые знакомства или побеседовать и поиграть со своими друзьями. (основой и общим интересом является майнкрафт).</p>
+                <p>В свиных рыльцах проводятся ивенты для игроков, а том числе и с денежным призом, для свиных рыльц делают отдельные моды и сборки, так что это полный эксклюзив.</p>
+                <p>А так же здесь есть отдельный тэг - РЫЛО. Он означает, что вы крут.</p>
+            </div>
+
+            <div class="card">
+                <h2>ПРАВИЛА</h2>
+                <p>1 - Оскорбления администрации запрещены</p>
+                <p>2 - Конфликты решаются лично, в случае, если подобное нерешаемо - подключается администрация</p>
+                <p>3 - Не делайте всякий бред, который будет приносить дискомфорт</p>
+                <p>4 - Докс, слив данных, ддос серверов полностью запрещен</p>
+                <p>5 - Спам запрещен</p>
+                <p>6 - Порнуха и фурри нежелательна</p>
+                <p>7 - Созывы ролей разрешены, главное не больше 1 раза в день на одного участника</p>
+                <p>8 - Читы на любых ивентах от свиных рыльц запрещены</p>
+                <p>9 - Администрация всегда права (нет)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
